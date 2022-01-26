@@ -1,6 +1,7 @@
 from passlib.context import CryptContext
+from sklearn.utils import deprecated
 
-pwd_cxt = CryptContext(schemes='bcrypt', deprecate='auto')
+pwd_cxt = CryptContext(schemes='bcrypt', deprecated='auto')
 
 class Hash():
     def bcrypt(password:str):
